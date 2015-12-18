@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='background.css'/>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; /*#333*/
+}
+
+li {
+    float: left;
+
+}
+
+.main {
+  margin: 0;
+  padding:0;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+
+    padding: 10px;
+}
+
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#background {
+  padding-left: 100px;
+  color: white;
+}
+
+@keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:500px; top:0px;}
+    50%  {background-color: blue; left:500px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+body {
+  background-color: black;
+}
+
+h4 {
+  font-family: cursive;
+}
+
+h1 {
+  font-family: Verdana;
+}
+
+  </style>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a class="active" href="../welcome/index.html.erb">Home</a></li>
+<li><a href="../contact.html.erb">Contact</a></li>
+<li><a href="../about.html.erb">About</a></li>
+</ul>
+</nav>
+
+<div class="main">
+<img src = "https://collegefoodienyc.files.wordpress.com/2012/08/layne-kennedy-nyc-pano_panorama1.jpeg" width="1840" height ="460">
+</div>
+
+<div class="square">
+  <div style="width:100px;height:100px;border:1px solid black;"></div>
+</div>
+
+<div id="background">
+<br><h1 id="bg">BACKGROUND</h1>
+  <br><br><br><br><br><br>
+
+  <h3>Work and Volunteer Experience</h3>
+
+  <br>
+
+  <h4>Sports Technologies</h4>
+  <h5>Web Developer Intern</h5>
+  <h6>Winter 2015</h6>
+  <p>I used HTML, CSS, and Javascript for front-end web design, and utilized Ruby on Rails, PHP and SQL for the back-end.</p>
+
+  <br>
+
+  <h4>Dartmouth Business Journal</h4>
+  <h5>Staff Writer</h5>
+  <h6>2015-2016</h6>
+  <p>Generate ideas and write articles concerning financial and business technology topics.</p>
+  <p>The DBJ is now partnered with Seeking Alpha, which reaches over 8 million unique viewers every month</p>
+  <p><a href="http://dartmouthbusinessjournal.com/2015/11/transmitting-data-through-the-cloud/">Transmitting Data Through the Cloud</a></p>
+  <p><a href="http://dartmouthbusinessjournal.com/2015/07/spacexplosions/">SpaceXplosion</a></p>
+
+  <br>
+
+  <h4>U.S. Department of Energy</h4>
+  <h5>Statistical Data Analysis Intern</h5>
+  <h6>Summer 2015</h6>
+  <p>I worked at the Federal Energy Regulatory Commission in the DOE</p>
+
+  <br>
+
+  <h4>Northeast Utilities</h4>
+  <h5>Student Intern</h5>
+  <h6>Summer 2014</h6>
+  <p>Performed macroeconomic analysis of New England energy consumption and helped to develop smart energy solutions</p>
+
+  <br>
+
+  <h4>Hartford Hospital</h4>
+  <h5>Pharmaceutical Volunteer</h5>
+  <h6>Summer 2012, Summer 2013</h6>
+  <p>I worked as a volunteer at Hartford Hospital, assisting in the packaging and categorization of medications</p>
+  <p>I recieved the Outstanding Volunteer Award after volunteering for over 100 hours for 2 summers</p>
+
+  <br>
+
+  <h4>Westminster Crossroads Learning Program</h4>
+  <h5>Student Tutor</h5>
+  <h6>2013-2014</h6>
+  <p>I worked with elementary school and middle school students during the school year, and assisted them with homework and test preparation.</p>
+  <p>I worked with high school student over the summer to help them complete summer school coursework, improve their grades and prepare for the SAT.</p>
+
+
+</div>
+</body>
+</html>

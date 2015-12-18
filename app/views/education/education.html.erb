@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='education.css'/>
+  <style>
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; /*#333*/
+}
+
+li {
+    float: left;
+
+}
+
+.main {
+  margin: 0;
+  padding:0;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+
+    padding: 10px;
+}
+
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#academics {
+  padding-left: 100px;
+  color: white;
+}
+
+@keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:500px; top:0px;}
+    50%  {background-color: blue; left:500px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+body {
+  background-color: black;
+}
+
+h3 {
+  font-family: cursive;
+}
+
+h4 {
+  font-family: Verdana;
+}
+
+  </style>
+</head>
+<body>
+
+<nav>
+<ul id="nav">
+<li><a class="active" href="../welcome/index.html.erb">Home</a></li>
+<li><a href="../contact.html.erb">Contact</a></li>
+<li><a href="../about.html.erb">About</a></li>
+</ul>
+</nav>
+
+<div class="main">
+<img src = "https://collegefoodienyc.files.wordpress.com/2012/08/layne-kennedy-nyc-pano_panorama1.jpeg" width="1840" height ="460">
+</div>
+
+<div class="square">
+  <div style="width:100px;height:100px;border:1px solid black;"></div>
+</div>
+
+<div id="academics">
+<br><h1 id="edu">EDUCATION</h1>
+  <br><br><br><br><br><br>
+
+  <h3>Dartmouth College</h3>
+  <h4>B.A. Candidate, Computer Science and Mathematical Finance</h4>
+  <h4>Class of 2018</h4>
+  <br>
+  <h4>Activities</h4>
+  <ol>
+  <li>Dartmouth Investment and Philanthropy Program</li><br>
+  <li>The Dartmouth Review</li><br>
+  <li>The Dartmouth Business Journal</li><br>
+  <li>Rockefeller Center First Year Fellow</li><br>
+  </ol>
+
+  <br>
+
+  <h3>Westminster School</h3>
+  <h4>High School</h4>
+  <br>
+  <h4>Activites</h4>
+  <ol>
+
+  <li>Editor-in-Chief of Westminster School Newspaper (The Martlet)</li><br>
+  <li>President of the Matematics Club</li><br>
+  <li>Model United Nations</li><br>
+  <li>Basketball, Cross Country, Lacrosse</li><br>
+
+  </ol>
+  <br>
+  <h3>Skills and Awards</h3>
+  <p>AIME Qualifier</p>
+  <p>AP Scholar with Distinction</p>
+  <p>Harvard Book Award</p>
+  <p>Excellence in Economics</p>
+  <p>National Merit Commended Scholar</p>
+  <p>Fluent in Python, Java, HTML, and CSS</p>
+  <p>Proficient in Ruby, SQL, and Javascript</p>
+  <p>Intermediate fluency in Spanish</p>
+
+  <br>
+  <h3>Coursework</h3>
+  <p>Multivariable Calculus (Math 008)</p>
+  <p>Vector Calculus (Math 013)</p>
+  <p>Linear Algebra with Applications (Math 022)</p>
+  <p>Computer Science (COSC 001)</p>
+  <p>Problem Solving via Object Oriented Programming (COSC 010)</p>
+  <p>Intermediate Microeconomics (ECON 021)</p>
+  <p>Intermediate Macroeconomics (ECON 022)</p>
+  <p>Public Policy (PBPL 005)</p>
+  <p>Introductory Neuroscience (PSYC 006)</p>
+
+</div>
+
+</body>
+</html>

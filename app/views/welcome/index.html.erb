@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' type="text/css" href='styleexperiment.css'/>
+  <style>
+  #me {
+    padding-left: 20px;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
+
+  .main {
+    margin: 0;
+    padding:0;
+
+  }
+
+  .center {
+      margin: auto;
+      width: 60%;
+
+      padding: 10px;
+  }
+
+  body
+  {
+      background-color: black;
+      font-family: Tahoma, Calibri, 'Trebuchet MS' , Arial;
+      margin: 0px; /*20px*/
+      color: #666666;
+  }
+
+
+  h1, h2
+  {
+      clear: both;
+      font-weight: normal;
+      text-shadow: 1px 1px 0px #FFFFFF;
+  }
+
+  /* Common division block */
+  .holder
+  {
+      border: 6px solid #FFFFFF;
+      float: left;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0px 0px 5px #333333;
+      -webkit-transition: 0.5s Ease;
+      -moz-transition: 0.5s Ease;
+      -o-transition: 0.5s Ease;
+      transition: 0.5s Ease;
+  }
+
+
+  /* Smooth Caption */
+  .smooth
+  {
+      opacity: 0.6;
+  }
+  .smooth:hover
+  {
+      opacity: 1;
+      box-shadow: 0px 0px 10px #333333;
+  }
+
+  .smooth:hover > .go-left
+  {
+      right:0px;
+  }
+  .go-top
+  {
+      background-color: rgba(0,0,0,0.5);
+      color: #FFFFFF;
+      position: absolute;
+      bottom: 0px;
+      top: 600px;
+      width: 360px;
+      text-align:center;
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+      -webkit-transition: 0.5s Ease;
+      -moz-transition: 0.5s Ease;
+      -o-transition: 0.5s Ease;
+      transition: 0.5s Ease;
+  }
+  .smooth:hover > .go-top
+  {
+      top:0px;
+  }
+  .go-top p
+  {
+      font-size: 12px;
+  }
+
+  /* Show Details */
+  .details-holder
+  {
+      float: left;
+      position: relative;
+      margin: 20px 5px 120px 5px;
+  }
+  .show-details img
+  {
+      opacity: 0.5;
+      width: 200px;
+      height: 150px;
+  }
+  .show-details:hover img
+  {
+      position: relative;
+      opacity: 1;
+      z-index: 99;
+  }
+  .img-info
+  {
+      padding: 170px 10px 0px 10px;
+      position: absolute;
+      z-index: 20;
+      top: -10px;
+      left: -10px;
+      width: 200px;
+      height: 100px;
+      background-color: #888888;
+      color: #FFFFFF;
+      border-radius: 5px;
+      box-shadow: 0px 8px 5px -6px #333333;
+      -webkit-transition: 0.5s Ease;
+      -moz-transition: 0.5s Ease;
+      -o-transition: 0.5s Ease;
+      transition: 0.5s Ease;
+      opacity: 0;
+
+  }
+  .show-details:hover .img-info
+  {
+      opacity:1;
+  }
+  .details-holder h1
+  {
+      font-size: 18px;
+      text-transform: uppercase;
+  }
+  .details-holder p
+  {
+      font-size: 12px;
+  }
+
+  </style>
+  </head>
+  <body>
+
+    <!--<h1><pre> Anish Chadalavada                   About     Contact</pre></h1>-->
+    <div>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="../contact.html.erb">Contact</a></li>
+      <li><a href="../about.html.erb">About</a></li>
+    </ul>
+  </div>
+
+
+
+    <div class="main">
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/9/97/New_York_City_Panorama_Sunset.jpg" height="720" width="1812">
+    </div>
+
+    <div id="me">
+    <h2>
+           More About Me
+    </h2>
+    </div>
+
+    <div class="holder smooth">
+        <a href="../education.html.erb"><img src="http://cdn.youvisit.com/Assets/img/locations/80512/1280_profile.jpg" height="300" width="382" /></a>
+        <div class="go-top">
+            <a href="../education.html.erb">Education</a>
+            <p>
+                This is a brief description of my education and credentials. I am currently a sophomore in college, and have
+                described my activities and academic pursuits in this section.
+            </p>
+        </div>
+    </div>
+
+    <div class="holder smooth">
+        <a href="../background.html.erb"><img src="https://c2.staticflickr.com/4/3939/15440845749_ff6f99315f_b.jpg" height="300" width="382" /></a>
+        <div class="go-top">
+            <a href="../background.html.erb">Background</a>
+            <p>
+                This is a brief description of my background and work experience, as well as the volunteer work
+                that I have done. My most recent work experience was at Sports Technologies, a small tech firm that
+                develops online games for the NFL, NCAA and NHL. There, I learned the web dev skills I used to make this website!
+            </p>
+        </div>
+    </div>
+
+    <div class="holder smooth">
+        <a href="../interests.html.erb"><img src="http://bear953.com/wp-content/blogs.dir/95/files/2013/08/new-england-patriots-wallpaper-best-sport-wallpapers-p-r-ibackgroundz_com-620x400.jpg" height="300" width="382" /></a>
+        <div class="go-top">
+            <a href="../interests.html.erb">Interests</a>
+            <p>
+                This is a quick overview of my interests. Go Patriots!
+            </p>
+        </div>
+    </div>
+
+    <div class="holder smooth">
+        <img src="http://www.summa-education.com/cms/images/sackler_physics_cropped.jpg" height="300" width="382" />
+        <div class="go-top">
+            Projects Year 1
+            <p>
+                This is a demonstration of the projects I worked on during my first year of college. Most of these projects
+                were developed in my Computer Science 1 class, using the Python programming language. I will be posting them
+                shortly, so check back soon!
+            </p>
+        </div>
+    </div>
+
+    <div class="holder smooth">
+        <img src="http://www.gakushuu.org/sites/default/files/imagecache/400xY/600px-Lorenz_attractor_yb.jpg" height="300" width="382"/>
+        <div class="go-top">
+            Projects Year 2
+            <p>
+              This is a demonstration of the projects I worked on during my second year of college. Most of these projects
+              were developed in my Computer Science 10 class and Computer Science 50 class, using the Java and C programming languages.
+              I will be posting them shortly, so check back soon!
+            </p>
+        </div>
+    </div>
+
+    <div class="holder smooth">
+        <img src="http://www.drodd.com/images10/computer-wallpaper8.jpg" height="300" width="382"/>
+        <div class="go-top">
+            Projects Year 3
+            <p>
+              This is a demonstration of the projects I worked on during my third year of college. I will be posting them
+              shortly, so check back soon!
+            </p>
+        </div>
+    </div>
+
+
+
+
+  </body>
+</html>

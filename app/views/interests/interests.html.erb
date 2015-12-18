@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='interests.css'/>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black; /*#333*/
+}
+
+li {
+    float: left;
+
+}
+
+.main {
+  margin: 0;
+  padding:0;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+
+    padding: 10px;
+}
+
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#Interests {
+  padding-left: 100px;
+  color: white;
+}
+
+#GOAT {
+  margin: 200px;
+}
+
+.twitter-timeline {
+  margin: 200px;
+}
+
+/**@keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:500px; top:0px;}
+    50%  {background-color: blue; left:500px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}**/
+
+body {
+  background-color: black;
+}
+
+  </style>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><a class="active" href="../welcome/index.html.erb">Home</a></li>
+<li><a href="../contact.html.erb">Contact</a></li>
+<li><a href="../about.html.erb">About</a></li>
+</ul>
+</nav>
+
+<div class="main">
+<img src = "https://collegefoodienyc.files.wordpress.com/2012/08/layne-kennedy-nyc-pano_panorama1.jpeg" width="1840" height ="460">
+</div>
+
+<div class="square">
+  <div style="width:100px;height:100px;border:1px solid black;"></div>
+</div>
+
+<div id="Interests">
+<br><h1 id="int">INTERESTS</h1>
+  <br>
+
+  <h3>Go Patriots!</h3>
+
+  <iframe id = "GOAT" width="420" height="315" src="https://www.youtube.com/embed/KU99MYTsEcA" frameborder="0" allowfullscreen></iframe>
+
+  <a class="twitter-timeline" href="https://twitter.com/Patriots" data-widget-id="677524906670706689">Tweets by @Patriots</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <br>
+
+</div>
+</body>
+</html>
